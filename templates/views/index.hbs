@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<br>
+			<br>
+			<br>
+                <button id="getAllUsers" class="button login__submit">
+					<span class="button__text">Get all users</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+                <button id="getByName" class="button login__submit">
+					<span class="button__text">Get user by name</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+                <button id="registerNew" class="button login__submit">
+					<span class="button__text">Register new user</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+        <button id="editById" class="button login__submit">
+					<span class="button__text">Edit user details</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+        <button id="delById" class="button login__submit">
+					<span class="button__text">Delete user by Id</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>			
+			</form>
+			
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<script>
+    var getAllUsers = document.getElementById('getAllUsers');
+    getAllUsers.onclick = function() {
+    location.assign('/users');
+}
+	var getByName = document.getElementById('getByName');
+    getByName.onclick = function() {
+    location.assign('/getByName');
+}
+	var registerNew = document.getElementById('registerNew');
+    registerNew.onclick = function() {
+    location.assign('/registerNew');
+}
+	var editById= document.getElementById('editById');
+    editById.onclick = function() {
+    location.assign('/editById');
+}
+	var delById= document.getElementById('delById');
+    delById.onclick = function() {
+    location.assign('/delById');
+}
+</script>
+</body>
+</html>
